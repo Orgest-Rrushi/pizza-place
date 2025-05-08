@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Place - Tirana</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Pizza Place</h1>
+        </div>
+        <div class="logo">
+          <!-- Logo placeholder -->
+          <img
+            src="C:\Users\User.DESKTOP-USGGAG7\Desktop\Pizza Place App\img\logo.png"
+            alt="Pizza Place Logo"
+            id="logo"
+          />
+        </div>
+        <nav>
+          <div class="language-switcher">
+            <button class="lang-btn active" data-lang="al">AL</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#home" class="lang-al">Kryefaqja</a
+              ><a href="#home" class="lang-en">Home</a>
+            </li>
+            <li>
+              <a href="#menu" class="lang-al">Menuja</a
+              ><a href="#menu" class="lang-en">Menu</a>
+            </li>
+            <li>
+              <a href="#about" class="lang-al">Rreth Nesh</a
+              ><a href="#about" class="lang-en">About</a>
+            </li>
+            <li>
+              <a href="#contact" class="lang-al">Kontakt</a
+              ><a href="#contact" class="lang-en">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+      <div class="video-container">
+        <!-- Replace this with your actual video -->
+        <video autoplay muted loop id="hero-video">
+          <source
+            src="C:\Users\User.DESKTOP-USGGAG7\Desktop\Pizza Place App\img\bcvideo.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="lang-al">Ushqim i Shijshëm në Zemër të Tiranës</h2>
+          <h2 class="lang-en">Delicious Food in the Heart of Tirana</h2>
+          <p class="lang-al">Pica, Hamburger, Sanduiçe & Krepa</p>
+          <p class="lang-en">Pizza, Burgers, Sandwiches & Crepes</p>
+          <a href="#menu" class="btn lang-al">Shiko Menunë</a>
+          <a href="#menu" class="btn lang-en">View Our Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section with Carousel -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2 class="section-title lang-al">Menuja Jonë</h2>
+        <h2 class="section-title lang-en">Our Menu</h2>
+
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-category="pizza">
+            <span class="lang-al">Pica</span>
+            <span class="lang-en">Pizza</span>
+          </button>
+          <button class="menu-tab" data-category="burgers">
+            <span class="lang-al">Hamburger</span>
+            <span class="lang-en">Burgers</span>
+          </button>
+          <button class="menu-tab" data-category="sandwiches">
+            <span class="lang-al">Sanduiçe</span>
+            <span class="lang-en">Sandwiches</span>
+          </button>
+          <button class="menu-tab" data-category="crepes">
+            <span class="lang-al">Krepa</span>
+            <span class="lang-en">Crepes</span>
+          </button>
+        </div>
+
+        <div class="menu-categories">
+          <!-- Pizza Menu -->
+          <div class="menu-category active" id="pizza">
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="C:\Users\User.DESKTOP-USGGAG7\Desktop\Pizza Place App\img\pizza cut.jpg"
+                      alt="Margherita Pizza"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Margherita <span class="price">€7.50</span></h3>
+                    <p class="lang-al">Salcë domatesh, mocarela dhe borzilok</p>
+                    <p class="lang-en">
+                      Fresh tomato sauce, mozzarella, and basil
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="C:\Users\User.DESKTOP-USGGAG7\Desktop\Pizza Place App\img\pizzaiol pizza.jpg"
+                      alt="Pepperoni Pizza"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Pepperoni <span class="price">€8.50</span></h3>
+                    <p class="lang-al">
+                      Salcë domatesh, mocarela dhe pepperoni
+                    </p>
+                    <p class="lang-en">
+                      Tomato sauce, mozzarella, and pepperoni
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Vegetarian"
+                      alt="Vegetarian Pizza"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Vegetariane <span class="price">€8.00</span></h3>
+                    <p class="lang-al">
+                      Salcë domatesh, mocarela, speca, kërpudha dhe ullinj
+                    </p>
+                    <p class="lang-en">
+                      Tomato sauce, mozzarella, bell peppers, mushrooms, and
+                      olives
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Quattro+Formaggi"
+                      alt="Quattro Formaggi"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Quattro Formaggi <span class="price">€9.50</span></h3>
+                    <p class="lang-al">
+                      Katër lloje djathi: mocarela, gorgonzola, parmixhano dhe
+                      ementaler
+                    </p>
+                    <p class="lang-en">
+                      Four cheeses: mozzarella, gorgonzola, parmesan, and
+                      emmental
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Capricciosa"
+                      alt="Capricciosa Pizza"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Capricciosa <span class="price">€9.00</span></h3>
+                    <p class="lang-al">
+                      Salcë domatesh, mocarela, proshutë, kërpudha, ullinj dhe
+                      angjinare
+                    </p>
+                    <p class="lang-en">
+                      Tomato sauce, mozzarella, ham, mushrooms, olives, and
+                      artichokes
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-btn prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Burgers Menu -->
+          <div class="menu-category" id="burgers">
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Classic+Burger"
+                      alt="Classic Burger"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Classic Burger <span class="price">€6.50</span></h3>
+                    <p class="lang-al">
+                      Mish viçi, sallatë, domate, qepë dhe salcë speciale
+                    </p>
+                    <p class="lang-en">
+                      Beef patty, lettuce, tomato, onion, and special sauce
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Cheese+Burger"
+                      alt="Cheese Burger"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Cheese Burger <span class="price">€7.00</span></h3>
+                    <p class="lang-al">
+                      Mish viçi, djathë çedar, sallatë, domate dhe majonezë
+                    </p>
+                    <p class="lang-en">
+                      Beef patty, cheddar cheese, lettuce, tomato, and mayo
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Chicken+Burger"
+                      alt="Chicken Burger"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Chicken Burger <span class="price">€6.50</span></h3>
+                    <p class="lang-al">
+                      Gjoks pule i pjekur, sallatë, domate dhe salcë hudhre
+                    </p>
+                    <p class="lang-en">
+                      Grilled chicken breast, lettuce, tomato, and garlic sauce
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=BBQ+Burger"
+                      alt="BBQ Burger"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>BBQ Burger <span class="price">€7.50</span></h3>
+                    <p class="lang-al">
+                      Mish viçi, djathë, bacon, qepë karamelizuar dhe salcë
+                      barbecue
+                    </p>
+                    <p class="lang-en">
+                      Beef patty, cheese, bacon, caramelized onions, and BBQ
+                      sauce
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-btn prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sandwiches Menu -->
+          <div class="menu-category" id="sandwiches">
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Club+Sandwich"
+                      alt="Club Sandwich"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Club Sandwich <span class="price">€5.50</span></h3>
+                    <p class="lang-al">
+                      Pulë, bacon, vezë, sallatë, domate dhe majonezë
+                    </p>
+                    <p class="lang-en">
+                      Chicken, bacon, egg, lettuce, tomato, and mayo
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Tuna+Sandwich"
+                      alt="Tuna Sandwich"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Tuna Sandwich <span class="price">€5.00</span></h3>
+                    <p class="lang-al">Ton, majonezë, misër dhe sallatë</p>
+                    <p class="lang-en">Tuna, mayo, corn, and lettuce</p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Veggie+Sandwich"
+                      alt="Veggie Sandwich"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Veggie Sandwich <span class="price">€4.50</span></h3>
+                    <p class="lang-al">
+                      Perime të pjekura, humus dhe gjethe të freskëta
+                    </p>
+                    <p class="lang-en">
+                      Grilled vegetables, hummus, and fresh greens
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Chicken+Avocado"
+                      alt="Chicken Avocado"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Chicken Avocado <span class="price">€6.00</span></h3>
+                    <p class="lang-al">
+                      Pulë e pjekur, avokado, domate dhe salcë jogurt
+                    </p>
+                    <p class="lang-en">
+                      Grilled chicken, avocado, tomato, and yogurt sauce
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-btn prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Crepes Menu -->
+          <div class="menu-category" id="crepes">
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Nutella+Crepe"
+                      alt="Nutella Crepe"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Nutella <span class="price">€4.00</span></h3>
+                    <p class="lang-al">Nutella dhe feta bananeje</p>
+                    <p class="lang-en">Nutella spread and banana slices</p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Ham+Cheese+Crepe"
+                      alt="Ham & Cheese Crepe"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Proshutë & Djathë <span class="price">€4.50</span></h3>
+                    <p class="lang-al">Proshutë, djathë dhe salcë beshamel</p>
+                    <p class="lang-en">Ham, cheese, and bechamel sauce</p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Strawberry+Crepe"
+                      alt="Strawberry Crepe"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Luleshtrydhe <span class="price">€4.00</span></h3>
+                    <p class="lang-al">
+                      Luleshtrydhe të freskëta, krem dhe salcë çokollate
+                    </p>
+                    <p class="lang-en">
+                      Fresh strawberries, whipped cream, and chocolate sauce
+                    </p>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <div class="menu-item-img">
+                    <img
+                      src="https://via.placeholder.com/300x200?text=Spinach+Crepe"
+                      alt="Spinach Crepe"
+                    />
+                  </div>
+                  <div class="menu-item-content">
+                    <h3>Spinaq <span class="price">€4.50</span></h3>
+                    <p class="lang-al">Spinaq, djathë ricotta dhe hudhra</p>
+                    <p class="lang-en">Spinach, ricotta cheese, and garlic</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-btn prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title lang-al">Rreth Nesh</h2>
+        <h2 class="section-title lang-en">About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="lang-al">
+              Pizza Place është një restorant i ngrohtë i vendosur në zemër të
+              Tiranës, që ofron një larmi ushqimesh të shijshme duke përfshirë
+              pica, hamburger, sanduiçe dhe krepa.
+            </p>
+            <p class="lang-en">
+              Pizza Place is a cozy restaurant located in the heart of Tirana,
+              offering a variety of delicious food including pizza, burgers,
+              sandwiches, and crepes.
+            </p>
+
+            <p class="lang-al">
+              Ne përdorim vetëm përbërësit më të freskët për të krijuar pjata të
+              shijshme që do të kënaqin dëshirat tuaja. Stafi ynë miqësor është
+              i përkushtuar për t'ju ofruar një përvojë të jashtëzakonshme.
+            </p>
+            <p class="lang-en">
+              We use only the freshest ingredients to create mouth-watering
+              dishes that will satisfy your cravings. Our friendly staff is
+              dedicated to providing you with an exceptional dining experience.
+            </p>
+
+            <p class="lang-al">
+              Na vizitoni sot në Rruga Muhamet Gjollesha, Tiranë!
+            </p>
+            <p class="lang-en">
+              Visit us today at Rruga Muhamet Gjollesha, Tirana!
+            </p>
+          </div>
+          <div class="about-img">
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.1294677339!2d19.8012!3d41.3275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310470fac5db%3A0x40c1a88c4ef1fe32!2sRruga%20Muhamet%20Gjollesha%2C%20Tiran%C3%AB%2C%20Albania!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title lang-al">Na Kontaktoni</h2>
+        <h2 class="section-title lang-en">Contact Us</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Rruga Muhamet Gjollesha, Tiranë, Shqipëri</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>+355 69 474 7370</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>info@pizzaplace.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <p class="lang-al">Hapur çdo ditë: 11:00 - 23:00</p>
+              <p class="lang-en">Open daily: 11:00 AM - 11:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Emri juaj / Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email-i juaj / Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subjekti / Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Mesazhi juaj / Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn lang-al">Dërgo Mesazhin</button>
+              <button type="submit" class="btn lang-en">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Pizza Place</h2>
+            <p class="lang-al">Ushqim i shijshëm në zemër të Tiranës</p>
+            <p class="lang-en">Delicious food in the heart of Tirana</p>
+          </div>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Pizza Place. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/355694747370" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
